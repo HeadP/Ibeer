@@ -1,0 +1,51 @@
+<html>
+	
+<meta http-equiv="refresh" content="5; url=http://localhost/htdocs/Login/Login.html">
+<title>Login</title>
+<!-- ================================================================== -->
+    <link rel="icon" type="image/png" href="C:\xampp\htdocs\htdocs\hp\img\icon.png"/>
+<!-- ================================================================== -->
+<head>
+<style type="text/css">
+#conteudo{ display:none; }
+.center{ 
+ position:absolute;
+ top: 50%;
+ left: 50%;
+ margin-left: -75px; /*centralizando a imagem*/
+ margin-top: -35px; /*centralizando a imagem*/
+}
+body{
+	background-color: #c1744d;
+}
+div {
+    width: 100px;
+    height: 200px;
+    overflow: hidden; /* Faz o div não aumentar a altura por causa da imagem */
+}
+img {
+    border: 0px solid red;
+    width: 100%;
+
+}
+</style>
+<script>
+  window.onload = function(){
+    document.getElementById('conteudo').style.display = "block";
+    setTimeout(function() {
+      document.getElementById('carregando').style.display = "none";
+    }, 8500);
+  }
+
+
+</script>
+</head>
+<body>
+<div id="carregando" class="center">
+   <img src="load.gif" width="100" height="70" />
+</div>
+ 
+<div id="conteudo">
+</div>
+</body>
+</html>
